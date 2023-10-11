@@ -1,10 +1,10 @@
-# OI-Wiki-export
+# Blog-export
 
-将 OI-Wiki 导出为印刷质量的 pdf 的工具。
+将 Blog 导出为印刷质量的 pdf 的工具。
 
 ## 下载
 
-可在 [GitHub Release](https://github.com/OI-wiki/OI-Wiki-export/releases) 中下载每周定期自动构建的 pdf 文件.
+可在 [GitHub Release](https://github.com/damonc-top2/pdf-export/releases) 中下载每周定期自动构建的 pdf 文件.
 
 ## 导出
 
@@ -34,22 +34,22 @@
 cd remark-latex
 npm install
 cd ..
-cd oi-wiki-export
+cd Blog-export
 npm install
 ```
-然后运行导出脚本，将 OI-Wiki 源文件转换为 LaTeX 格式：
+然后运行导出脚本，将 Blog 源文件转换为 LaTeX 格式：
 
 ```
-node index.js path/to/OI-wiki/repo
+node index.js path/to/Blog/repo
 ```
 
 然后使用 latexmk 编译导出后得到的 tex 文档
 
 ```
-latexmk -shell-escape -8bit -xelatex oi-wiki-export.tex
+latexmk -shell-escape -8bit -xelatex Blog-export.tex
 ```
 
-最终得到的 oi-wiki-export.pdf 即为结果。
+最终得到的 Blog-export.pdf 即为结果。
 
 ### Typst 版本
 
@@ -72,23 +72,23 @@ latexmk -shell-escape -8bit -xelatex oi-wiki-export.tex
 cd remark-typst
 npm install
 cd ..
-cd oi-wiki-export-typst
+cd Blog-export-typst
 npm install
 ```
 
-运行导出脚本，将 OI-Wiki 源文件转换为 Typst 格式：
+运行导出脚本，将 Blog 源文件转换为 Typst 格式：
 
 ```sh
-node index.js path/to/OI-wiki/repo
+node index.js path/to/Blog/repo
 ```
 
 使用 Typst 编译导出后得到的 typ 文档
 
 ```sh
-typst compile oi-wiki-export.typ
+typst compile Blog-export.typ
 ```
 
-最终得到的 oi-wiki-export.pdf 即为结果。
+最终得到的 Blog-export.pdf 即为结果。
 
 ## 故障排除
 
@@ -96,4 +96,4 @@ typst compile oi-wiki-export.typ
 
 ## 注意
 
-在使用导出得到的 pdf 时，应当注意 OI-wiki 的 LICENSE。
+在使用导出得到的 pdf 时，应当注意 Blog 的 LICENSE。
